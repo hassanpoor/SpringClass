@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+	   		http://www.springframework.org/schema/beans/spring-beans-3.1.xsd
+	   		http://www.springframework.org/schema/context
+	   		http://www.springframework.org/schema/context/spring-context-3.1.xsd">
+
+    <!--    <context:property-placeholder properties-ref="deployProperties"/>-->
+
+    <!--    &lt;!&ndash; Activates various annotations to be detected in bean classes &ndash;&gt;-->
+    <!--    <context:annotation-config/>-->
+
+    <!--    &lt;!&ndash; Imports logging configuration &ndash;&gt;-->
+    <!--    <import resource="trace-context.xml"/>-->
+
+    <!--    &lt;!&ndash; Imports Spring Data & MongoDB configuration &ndash;&gt;-->
+    <!--    <import resource="spring-data.xml" />-->
+
+    <!--    &lt;!&ndash; Imports SpringMVC configuration &ndash;&gt;-->
+    <!--    <import resource="mvc-dispatcher-servlet.xml" />-->
+
+    <bean id="baseBall" class="org.example.IOC.BaseballCoach"/>
+    <bean id="fotball" class="org.example.IOC.FootballCoach"/>
+
+</beans>
